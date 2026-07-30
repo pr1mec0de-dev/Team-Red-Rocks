@@ -48,7 +48,7 @@
         android:layout_below="@+id/buttonAddMeal"
         android:layout_alignStart="@+id/buttonAddMeal"
         android:visibility="invisible"
-        android:textColor="@color/design_textinput_error_color_light" />
+        android:textColor="@color/errorText" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -60,7 +60,7 @@
         android:layout_below="@+id/buttonReviewMeal"
         android:layout_alignStart="@+id/buttonReviewMeal"
         android:visibility="invisible"
-        android:textColor="@color/design_textinput_error_color_light" />
+        android:textColor="@color/errorText" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
