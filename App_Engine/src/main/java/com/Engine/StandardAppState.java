@@ -18,7 +18,7 @@ public class StandardAppState implements AppState{
     private List<Venue> venues = new ArrayList();
     private List<MenuItem> menuItems = new ArrayList();
     private List<Recommendation> recommendationsList = new ArrayList();
-    private UserProfile userProfile = new StandardUserProfile();
+    private UserProfile userProfile = new StandardUserProfile(2000, new ArrayList<Meal>());
 
 
     public StandardAppState() {
