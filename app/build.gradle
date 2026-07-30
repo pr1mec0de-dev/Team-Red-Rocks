@@ -1,15 +1,19 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 24
-    buildToolsVersion '25'
+    compileSdkVersion 28
+    buildToolsVersion '28.0.3'
 
     defaultConfig {
         applicationId "com.redteam.ndsunutrition"
-        minSdkVersion 17
-        targetSdkVersion 24
+        minSdkVersion 19
+        targetSdkVersion 28
         versionCode 1
         versionName "1.0"
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
     }
     buildTypes {
         release {
@@ -17,12 +21,14 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    lint {
+        abortOnError false
+    }
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    testCompile 'junit:junit:4.12'
-    compile 'com.android.support:appcompat-v7:24.1.1'
-    compile 'com.android.support:design:24.1.1'
-    compile project(path: ':App_Engine')
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support:28.0.0'
+    implementation project(':App_Engine')
+    testImplementation 'junit:juniy:4.12'
 }
