@@ -12,13 +12,13 @@ import java.util.Objects;
  *
  * @author mitchell.olson.1
  */
-public class MealEntry extends MenuItem{
+public class MealEntry {
 
     /**
      * @param args the command line arguments
      */
     //Declare Variables
-    MenuItem menuItem = new MenuItem();
+    MenuItem menuItem;
     double amount;
 
     public MealEntry(MenuItem item, double amount) {
